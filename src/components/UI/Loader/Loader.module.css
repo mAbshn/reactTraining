@@ -1,0 +1,21 @@
+.loader {
+    height: 300px;
+    width: 200px;
+    background-image: url(./loader.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: mirror 0.3s infinite steps(1, end);
+}
+
+@keyframes mirror {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(-1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
